@@ -1,0 +1,61 @@
+
+
+# Install Fish
+sudo apt install fish
+
+# Run Fish Shell
+fish
+
+# Optional Below Here:
+# Remove Greeting
+set fish_greeting
+
+- Install fish - source (3.1.2)
+
+- get last release in https://github.com/fish-shell/fish-shell/releases
+
+In case you get this below error:
+
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+CURSES_CURSES_LIBRARY (ADVANCED)
+    linked by target "fishlib" in directory /home/lucio/Downloads/fish-3.1.2
+
+So, procede this way:
+
+$ sudo apt install ncurses-dev
+$ cd build
+$ cmake ..
+$ make
+$ sudo make install
+$ which fish
+
+
+### spacefish
+https://github.com/matchai/spacefish
+
+
+- Install spacefish Oh My Fish!
+
+$ curl -L https://get.oh-my.fish | fish
+or, using proxy
+$ curl -s -x http://proxy-ima.ima.sp.gov.br:3128 -L https://get.oh-my.fish | fish
+
+$ omf install spacefish
+
+- (option) Install spacefish using Fisher
+
+$ fisher add matchai/spacefish
+
+# Powerline fonts
+https://github.com/powerline/fonts
+
+sudo apt install fonts-powerline
+
+# Set Fish Shell
+chsh -s /usr/bin/fish
+
+or
+
+put at the end of .bashrc:
+fish
