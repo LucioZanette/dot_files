@@ -3,3 +3,23 @@ https://medium.com/@luyo.lemp/acredito-que-muitos-de-voc%C3%AAs-j%C3%A1-tenham-o
 https://github.com/cseelus/vim-colors-lucid
 
 https://klauslaube.com.br/2017/10/15/vim-para-desenvolvimento-python.html
+
+
+# neovim
+
+- vim-plug
+
+curl -s -x http://proxy-ima.ima.sp.gov.br:3128 -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+O controle dos plugins é feito através do .vimrc:
+
+" ~/.vimrc
+
+call plug#begin('~/.vim/plugged')
+
+" Lista de plugins
+
+call plug#end()
+
+Uma vez que o plugin desejado fora adicionado ao .vimrc, o comando :PlugInstall fará o download e instalação do pacote.
+
