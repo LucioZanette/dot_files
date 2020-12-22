@@ -1,5 +1,15 @@
+### sources
 # TMUX Guide
 https://tmuxguide.readthedocs.io/en/latest/tmux/tmux.html
-
 # Tmux Cheat Sheet & Quick Reference
 https://tmuxcheatsheet.com/
+
+# Configuration
+- copy .tmux.conf to ~/
+$ cp .tmux.conf ~
+
+- reload configuration
+ctrl+A and then :
+:source-file ~/.tmux.conf
+or
+$ tmux source-file ~/.tmux.conf
